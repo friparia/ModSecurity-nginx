@@ -35,7 +35,6 @@ ngx_http_modsecurity_body_filter_init(void)
 ngx_int_t
 ngx_http_modsecurity_body_filter(ngx_http_request_t *r, ngx_chain_t *in)
 {
-    int buffer_fully_loadead = 0;
     ngx_chain_t *chain = in;
     ngx_http_modsecurity_ctx_t *ctx = NULL;
 #if defined(MODSECURITY_SANITY_CHECKS) && (MODSECURITY_SANITY_CHECKS)
